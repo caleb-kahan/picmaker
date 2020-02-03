@@ -16,46 +16,46 @@ def generateFile(image):
 def editImage(image):
     for i in range(550):
         for j in range(550):
-            if distance((i,j),(250,250))<200 and distance((i,j),(250,250))>184:
+            if distance((i,j),(275,275))<200 and distance((i,j),(275,275))>184:
                 image[i][j] = [50,50,50]
-            if distance((i,j),(250,250))<135 and distance((i,j),(250,250))>119:
+            if distance((i,j),(275,275))<135 and distance((i,j),(275,275))>119:
                 image[i][j] = [50,50,50]
-            if distance((i,j),(250,250))<10:
+            if distance((i,j),(275,275))<10:
                 image[i][j] = [50,50,50]
             distBetweenBarCenter = 85
             barRadius = 7
             barLength = 170
             #Making 4 big bars
-            makeBar(image,250,250,i,j,distBetweenBarCenter,barRadius,barLength,"up")
-            makeBar(image,250,250,i,j,distBetweenBarCenter,barRadius,barLength,"down")
-            makeBar(image,250,250,i,j,distBetweenBarCenter,barRadius,barLength,"left")
-            makeBar(image,250,250,i,j,distBetweenBarCenter,barRadius,barLength,"right")
+            makeBar(image,275,275,i,j,distBetweenBarCenter,barRadius,barLength,"up")
+            makeBar(image,275,275,i,j,distBetweenBarCenter,barRadius,barLength,"down")
+            makeBar(image,275,275,i,j,distBetweenBarCenter,barRadius,barLength,"left")
+            makeBar(image,275,275,i,j,distBetweenBarCenter,barRadius,barLength,"right")
 
             barLength = 40
             distBetweenBarCenter = 16
             distBetweenOldNew = 56
             #Two Horizontal Down-bars
-            makeBar(image,250,250+distBetweenOldNew,i,j,distBetweenBarCenter,barRadius,barLength,"left")
-            makeBar(image,250,250+distBetweenOldNew,i,j,distBetweenBarCenter,barRadius,barLength,"right")
+            makeBar(image,275,275+distBetweenOldNew,i,j,distBetweenBarCenter,barRadius,barLength,"left")
+            makeBar(image,275,275+distBetweenOldNew,i,j,distBetweenBarCenter,barRadius,barLength,"right")
 
             #Two Horizontal Up-bars
-            makeBar(image,250,250-distBetweenOldNew,i,j,distBetweenBarCenter,barRadius,barLength,"left")
-            makeBar(image,250,250-distBetweenOldNew,i,j,distBetweenBarCenter,barRadius,barLength,"right")
+            makeBar(image,275,275-distBetweenOldNew,i,j,distBetweenBarCenter,barRadius,barLength,"left")
+            makeBar(image,275,275-distBetweenOldNew,i,j,distBetweenBarCenter,barRadius,barLength,"right")
 
             #Two Vertical Right-bars
-            makeBar(image,250+distBetweenOldNew,250,i,j,distBetweenBarCenter,barRadius,barLength,"up")
-            makeBar(image,250+distBetweenOldNew,250,i,j,distBetweenBarCenter,barRadius,barLength,"down")
+            makeBar(image,275+distBetweenOldNew,275,i,j,distBetweenBarCenter,barRadius,barLength,"up")
+            makeBar(image,275+distBetweenOldNew,275,i,j,distBetweenBarCenter,barRadius,barLength,"down")
 
             #Two Vertical Left-bars
-            makeBar(image,250-distBetweenOldNew,250,i,j,distBetweenBarCenter,barRadius,barLength,"up")
-            makeBar(image,250-distBetweenOldNew,250,i,j,distBetweenBarCenter,barRadius,barLength,"down")
+            makeBar(image,275-distBetweenOldNew,275,i,j,distBetweenBarCenter,barRadius,barLength,"up")
+            makeBar(image,275-distBetweenOldNew,275,i,j,distBetweenBarCenter,barRadius,barLength,"down")
 
             '''
-            if distance((i,j),(310,250))<25 and distance((i,j),(310,250))>21:
+            if distance((i,j),(310,275))<25 and distance((i,j),(310,275))>21:
                 image[i][j] = [225,198,153]
-            if distance((i,j),(250,250))<50 and distance((i,j),(310,250))<21:
+            if distance((i,j),(275,275))<50 and distance((i,j),(310,275))<21:
                 image[i][j] = [0,0,0]
-            if i>235 and i <265 and j<250 and j>150:
+            if i>235 and i <265 and j<275 and j>150:
                 image[i][j] = [225,198,153]
             '''
 
